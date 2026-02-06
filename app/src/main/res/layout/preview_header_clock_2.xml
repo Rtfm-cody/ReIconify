@@ -22,7 +22,7 @@
             android:singleLine="true"
             android:tag="text1"
             android:textColor="?android:textColorPrimary"
-            android:textSize="40dp"
+            android:textSize="80dp"
             android:textStyle="bold" />
 
         <TextClock
@@ -36,7 +36,7 @@
             android:includeFontPadding="false"
             android:tag="accent1"
             android:textColor="@android:color/system_accent1_300"
-            android:textSize="40dp"
+            android:textSize="80dp"
             android:textStyle="bold" />
     </FrameLayout>
 
@@ -51,6 +51,6 @@
         android:tag="text1|date"
         android:textAlignment="viewStart"
         android:textColor="?android:textColorPrimary"
-        android:textSize="16dp"
+        android:textSize="8dp"
         android:textStyle="bold" />
 </LinearLayout>

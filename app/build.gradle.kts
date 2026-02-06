@@ -10,11 +10,19 @@ plugins {
 
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
+    buildToolsVersion = "35.0.0"
 }
 
 android {
     namespace = "com.drdisagree.iconify"
     compileSdk = 35
+    
+
+    externalNativeBuild {
+        cmake {
+            path("src/main/cpp/CMakeLists.txt")
+            // specify the cmake version
+            version = "4.2.1"
 
     defaultConfig {
         applicationId = "com.drdisagree.iconify"
