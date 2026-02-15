@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/clock_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="h"
+        android:textColor="#FFFFFF"
+        android:textSize="140sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bedafutr"
+        app:layout_constraintBottom_toBottomOf="@+id/date_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clock_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingBottom="20dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text=":"
+        android:fontFamily="@font/bedafutr"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/clock_minute"
+        app:layout_constraintStart_toEndOf="@+id/clock_hour"
+        app:layout_constraintEnd_toStartOf="@+id/clock_minute"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <TextView
+        android:id="@+id/clock_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="mm"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bedafutr"
+        app:layout_constraintStart_toEndOf="@+id/clock_separator"
+        app:layout_constraintTop_toTopOf="@+id/clock_hour"
+         />
+
+    <LinearLayout
+        android:id="@+id/date_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/lockscreen_clock_62_bg1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/clock_minute"
+        app:layout_constraintStart_toStartOf="@+id/clock_minute"
+        app:layout_constraintTop_toBottomOf="@+id/clock_minute">
+
+        <TextView
+            android:id="@+id/clock_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:shadowColor="#80000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="EEEE | MMMM d"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:letterSpacing="0.05"
+            android:textStyle="bold" 
+            android:fontFamily="@font/bedafutr" />
+            
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
