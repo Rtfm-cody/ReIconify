@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="5dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -30,7 +30,7 @@
                 android:tag="accent1|nolineheight"
                 android:textAlignment="center"
                 android:textColor="@android:color/system_accent1_100"
-                android:textSize="75sp" />
+                android:textSize="105sp" />
 
             <TextClock
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:tag="accent1"
                 android:textAlignment="center"
                 android:textColor="@android:color/system_accent1_100"
-                android:textSize="75sp" />
+                android:textSize="105sp" />
         </LinearLayout>
 
         <TextClock
@@ -58,7 +58,7 @@
             android:singleLine="true"
             android:tag="text1"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:textSize="10dp" />
 
         <TextClock
             android:layout_width="match_parent"
@@ -71,6 +71,6 @@
             android:singleLine="true"
             android:tag="text1"
             android:textColor="@android:color/white"
-            android:textSize="16dp" />
+            android:textSize="7dp" />
     </LinearLayout>
 </LinearLayout>
