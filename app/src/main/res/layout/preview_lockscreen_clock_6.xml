@@ -24,7 +24,8 @@
             android:singleLine="true"
             android:tag="text1|nolineheight"
             android:textColor="@android:color/white"
-            android:textSize="70sp"
+            android:textSize="130sp"
+            android:fontFamily="@font/eunomia"
             android:textStyle="bold" />
 
         <TextClock
@@ -38,8 +39,9 @@
             android:gravity="center_horizontal"
             android:singleLine="true"
             android:tag="text1"
-            android:textColor="@android:color/white"
-            android:textSize="70sp"
+            android:textColor="@android:color/@android:color/system_accent1_200"
+            android:textSize="130sp"
+            android:fontFamily="@font/eunomia"
             android:textStyle="bold" />
 
         <TextClock
@@ -47,42 +49,31 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="-12dp"
-            android:format12Hour="EEE"
-            android:format24Hour="EEE"
+            android:format12Hour="EEEE"
+            android:format24Hour="EEEE"
             android:gravity="center_horizontal"
             android:includeFontPadding="false"
             android:maxLines="2"
             android:singleLine="true"
             android:textAlignment="center"
+            android:fontFamily="@font/kagero"
             android:textAllCaps="true"
-            android:tag="accent1"
-            android:textColor="@android:color/system_accent1_200"
-            android:textSize="40sp" />
-
-        <TextClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:format12Hour="MMMM"
-            android:format24Hour="MMMM"
-            android:singleLine="true"
-            android:includeFontPadding="false"
-            android:tag="accent1"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
+            android:tag="accent2"
+            android:textColor="@android:color/system_accent2_200"
             android:textSize="12sp" />
 
         <TextClock
             android:includeFontPadding="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:format12Hour="dd - yyy"
-            android:format24Hour="dd - yyy"
+            android:format12Hour="MMMM dd"
+            android:format24Hour="MMMM dd"
             android:singleLine="true"
             android:tag="text1"
             android:textAlignment="center"
             android:textAllCaps="true"
+            android:fontFamily="@font/kagero"
             android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:textSize="8sp" />
     </LinearLayout>
 </LinearLayout>
